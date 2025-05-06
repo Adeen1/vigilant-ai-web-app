@@ -8,6 +8,7 @@ import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import EmployeeForm from "../components/EmployeeForm";
 import EmployeeList from "../components/EmployeeList";
+import { signOut } from "next-auth/react";
 
 function Dashboard() {
   const [subscriptions, setSubscriptions] = useState([]);
@@ -116,7 +117,7 @@ function Dashboard() {
       <header className="bg-white shadow-sm">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">InsightGuardian</h1>
+            <h1 className="text-2xl font-bold text-primary">Vigilant Ai</h1>
           </div>
           <div className="flex items-center gap-4">
             <div className="text-right">
